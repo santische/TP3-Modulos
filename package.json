@@ -1,0 +1,25 @@
+{
+  "name": "tp3-modulos",
+  "version": "1.0.0",
+  "description": "tp3 de node",
+  "homepage": "https://github.com/santische/TP3-Modulos#readme",
+  "bugs": {
+    "url": "https://github.com/santische/TP3-Modulos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santische/TP3-Modulos.git"
+  },
+  "license": "ISC",
+  "author": "Santiago Schettini y Alejo Campano",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "dayjs": "^1.11.20"
+  }
+}

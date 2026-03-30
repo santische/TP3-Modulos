@@ -7,7 +7,7 @@ console.log("EJERCICIO 1");
 ejercicio1();
 
 console.log("\nEJERCICIO 2");
-ejercicio2();
+await ejercicio2();
 
 console.log("\nEJERCICIO 3");
 ejercicio3();

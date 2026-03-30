@@ -1,12 +1,8 @@
-import fs from "fs";
+import fs from "fs/promises";
 
-function manejarProductos() {
-  fs.readFile("./productos.json", "utf-8", (err, data) => {
-    if (err) {
-      console.log("Error al leer el archivo");
-      return;
-    }
-
+async function manejarProductos() {
+  try {
+    const data = await fs.readFile("./productos.json", "utf-8");
     const productos = JSON.parse(data);
 
     console.log("Productos actuales:");
@@ -21,19 +17,20 @@ function manejarProductos() {
 
     productos.push(nuevoProducto);
 
-    fs.writeFile("./productos.json", JSON.stringify(productos, null, 2), (err) => {
-      if (err) {
-        console.log("Error al guardar");
-        return;
-      }
+    await fs.writeFile(
+      "./productos.json",
+      JSON.stringify(productos, null, 2)
+    );
 
-      console.log("\nProducto agregado\n");
+    console.log("\nProducto agregado\n");
 
-      productos.forEach(p => {
-        console.log(`${p.nombre} - $${p.precio}`);
-      });
+    productos.forEach(p => {
+      console.log(`${p.nombre} - $${p.precio}`);
     });
-  });
+
+  } catch (error) {
+    console.log("Error:", error);
+  }
 }
 
 export default manejarProductos;

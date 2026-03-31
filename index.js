@@ -6,6 +6,7 @@ import ejercicio5 from "./ejercicio5.js";
 import ejercicio6 from "./ejercicio6.js";
 import intervalo from "./ejercicio7.js";
 import analizarTexto from "./ejercicio8.js";
+import ejercicio9 from "./ejercicio9.js";
 
 
 
@@ -27,11 +28,14 @@ await ejercicio5("Mouse");
 console.log("\nEJERCICIO 6");
 await ejercicio6();
 
-console.log("\nEJERCICIO 7");
-await intervalo;
+console.log("\nEJERCICIO 7")
+ ejer
 
 console.log("\nEJERCICIO 8");
 console.log(analizarTexto("hola mundo"))
+
+console.log("\nEJERCICIO 9");
+ejercicio9()
 
 
 

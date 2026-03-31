@@ -1,3 +1,4 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; //tira chat por problemas del axios
 import axios from "axios";
 
 async function obtenerPais(nombre) {

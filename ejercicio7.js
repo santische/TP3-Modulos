@@ -1,4 +1,5 @@
-let i = 1;
+const ejercicio7 = () =>{
+    let i = 1;
 
 const intervalo = setInterval(() => {
     console.log(i);
@@ -9,5 +10,5 @@ const intervalo = setInterval(() => {
     }
     i++;
 }, 1000);
-
-export default intervalo;
+}
+export default ejercicio7;

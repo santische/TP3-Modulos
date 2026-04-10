@@ -4,8 +4,10 @@ import ejercicio3 from "./ejercicio3.js";
 import ejercicio4 from "./ejercicio4.js";
 import ejercicio5 from "./ejercicio5.js";
 import ejercicio6 from "./ejercicio6.js";
+import ejercicio7 from "./ejercicio7.js";
 import intervalo from "./ejercicio7.js";
 import analizarTexto from "./ejercicio8.js";
+import validarPassword from "./ejercicio9.js";
 import ejercicio9 from "./ejercicio9.js";
 
 
@@ -29,13 +31,13 @@ console.log("\nEJERCICIO 6");
 await ejercicio6();
 
 console.log("\nEJERCICIO 7")
- ejer
+await ejercicio7();
 
 console.log("\nEJERCICIO 8");
 console.log(analizarTexto("hola mundo"))
 
 console.log("\nEJERCICIO 9");
-ejercicio9()
+validarPassword("Contraseña123")
 
 
 
